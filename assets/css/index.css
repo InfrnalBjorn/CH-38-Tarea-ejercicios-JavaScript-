@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.camacho {
+  background-color: #202124 !important;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 0rem;
+
+}
+
+.container {
+  height: 400px;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  perspective: 500px;
+}
+
+.logo {
+  margin-top: 120px;
+  width: 380px;
+  height: 80px;
+  background: url(../img/bienv.png);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 10px;
+  filter: drop-shadow(0px 7px 21px #ffffff);
+  animation: rotar 7s linear infinite;
+}
+/*
+.logo:hover{
+    cursor: pointer;
+}
+*/
+@keyframes rotar {
+  from {
+    transform: rotateY(-360deg);
+  }
+  to {
+    transform: rotateY(-380eg);
+  }
+}
+
+.bottom_part {
+  width: 11rem;
+  height: 30rem;
+  position: absolute;
+  bottom: -190px;
+  background: #242424;
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 10px 10px #11111136;
+  transform: rotate(90deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom_part::before {
+  content: "";
+  width: 4rem;
+  height: 20rem;
+  position: absolute;
+  bottom: 5.2rem;
+  background: #ffffff;
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 10px 10px #11111136;
+  left: 2.7rem;
+  filter: blur(20px);
+}
